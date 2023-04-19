@@ -1,0 +1,30 @@
+$light: #FFF;
+$primary-light: #0e6cff;
+$dark: #333333;
+$primary-dark: #FFF;
+$font-stack: Arial, Helvetica, sans-serif;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+%base-background {
+    font-family: $font-stack;
+    line-height: 1.6;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.dark {
+    @extend %base-background;
+    background-color: $dark;
+    color: $primary-dark;
+  }
+  
+.light {
+    @extend %base-background;
+    background: $light;
+    color: $primary-light;
+}
